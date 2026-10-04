@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mulembe-app.github.io/sitemap.xml
