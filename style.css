@@ -157,10 +157,8 @@ a.card.link .more { display: inline-block; margin-top: auto; padding-top: 12px; 
 section { scroll-margin-top: 70px; }
 #phone { scroll-margin-top: 80px; }
 .policy-link { text-align: center; margin: 38px 0 0; font-weight: 600; }
-.card.mini { padding: 20px 22px 18px; }
-.card.mini .icon { font-size: 24px; margin-bottom: 10px; }
-.card.mini h3 { font-size: 17px; }
-.card.mini p { font-size: 15px; }
+.points .ico { width: 28px; height: 28px; color: var(--accent); margin-bottom: 10px; display: block; }
+.points.privacy { row-gap: 34px; }
 
 /* "Back to features", shown after a feature box's Read more */
 .back-pill {
