@@ -206,3 +206,20 @@ a.card.link:hover .icon { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.09), 0
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 .compare table { table-layout: fixed; }
 .compare thead th:first-child { width: 40%; }
+
+/* On a phone the comparison becomes a list: each feature on its own line, the three answers under it,
+   and the agent names pinned under the top bar while scrolling through it. */
+@media (max-width: 640px) {
+  .compare { overflow: visible; }
+  .compare table, .compare thead, .compare tbody { display: block; min-width: 0; }
+  .compare tr { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .compare thead { position: sticky; top: 62px; z-index: 2; }
+  .compare thead tr { background: #2c3439; border-radius: var(--radius) var(--radius) 0 0; box-shadow: 0 1px 0 var(--line); }
+  .compare thead th { background: none; padding: 12px 6px; font-size: 13px; border-bottom: 0; }
+  .compare thead th:first-child { display: none; }
+  .compare .long { display: none; }
+  .compare tbody th { grid-column: 1 / -1; padding: 14px 16px 2px; border-bottom: 0; font-size: 15px; }
+  .compare td { padding: 6px 6px 14px; }
+  .compare td.part { font-size: 12.5px; line-height: 1.35; }
+  .compare td:nth-child(2) { background: none; }
+}
