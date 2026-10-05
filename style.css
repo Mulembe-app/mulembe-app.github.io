@@ -108,8 +108,8 @@ section p.intro { color: var(--muted); text-align: center; max-width: 680px; mar
 .faq details { background: var(--card); border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; box-shadow: 0 0 0 1px var(--line); }
 .faq summary { cursor: pointer; font-weight: 600; list-style: none; }
 .faq summary::-webkit-details-marker { display: none; }
-.faq summary::after { content: "+"; float: right; color: var(--muted); }
-.faq details[open] summary::after { content: "–"; }
+.faq summary::after { content: "+"; float: right; color: var(--muted); transition: transform .15s ease; }
+.faq details[open] summary::after { transform: rotate(45deg); }
 .faq details p { color: var(--muted); margin: 10px 0 2px; }
 
 /* Text pages (privacy, terms…) */
