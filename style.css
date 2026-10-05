@@ -132,3 +132,12 @@ footer.bottom a:hover { color: var(--text); }
   .hero { padding-top: 56px; }
   section { padding: 54px 0; }
 }
+
+/* Feature sections: short two-part headlines with a line or two each */
+.points { display: grid; gap: 18px; margin-top: 8px; }
+.points h3 { margin: 0 0 4px; font-size: 18px; }
+.points p { margin: 0; color: var(--muted); font-size: 15.5px; }
+.points.three { grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 34px; }
+@media (max-width: 860px) { .points.three { grid-template-columns: 1fr; } }
+.shot.wide { margin-top: 10px; }
+.shot.plain { box-shadow: none; border-radius: 0; }
