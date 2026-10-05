@@ -176,3 +176,4 @@ section { scroll-margin-top: 70px; }
 .page ol.steps li p { margin: 0 0 14px; }
 .page ol.steps img { border-radius: 12px; box-shadow: 0 16px 44px rgba(0, 0, 0, 0.45), 0 0 0 1px var(--line); max-width: 100%; height: auto; }
 .page ol.steps img.dialog { max-width: 440px; }
+nav.links a[aria-current="page"] { color: var(--text); }
