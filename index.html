@@ -266,6 +266,31 @@
   </section>
 </main>
 
+<a id="back-to-features" class="back-pill" href="#features" hidden>↑ Back to features</a>
+<script>
+  // After "Read more", a button in the corner leads back to the box you came from.
+  (function () {
+    var pill = document.getElementById("back-to-features"), from = null, shownAt = 0;
+    document.querySelectorAll('a.card.link[href^="#"]').forEach(function (card, i) {
+      card.id = card.id || "feature-" + (i + 1);
+      card.addEventListener("click", function () {
+        from = card; shownAt = Date.now(); pill.hidden = false;
+      });
+    });
+    pill.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (from) from.scrollIntoView({ behavior: "smooth", block: "center" });
+      pill.hidden = true;
+    });
+    // Back among the features by scrolling: no need for the button.
+    window.addEventListener("scroll", function () {
+      if (pill.hidden || Date.now() - shownAt < 1500) return;
+      var box = document.getElementById("features").getBoundingClientRect();
+      if (box.top < window.innerHeight * 0.5 && box.bottom > window.innerHeight * 0.5) pill.hidden = true;
+    }, { passive: true });
+  })();
+</script>
+
 <footer class="bottom">
   <div class="wrap">
     <span>© 2026 Mulembe</span>
