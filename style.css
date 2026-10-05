@@ -154,3 +154,4 @@ a.card.link:hover { transform: translateY(-2px); box-shadow: 0 0 0 1px rgba(167,
 a.card.link .more { display: inline-block; margin-top: auto; padding-top: 12px; font-size: 14px; font-weight: 600; color: var(--accent); }
 section { scroll-margin-top: 70px; }
 #phone { scroll-margin-top: 80px; }
+.policy-link { text-align: center; margin: 38px 0 0; font-weight: 600; }
