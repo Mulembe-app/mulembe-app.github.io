@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Mulembe</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Mon, 05 Oct 2026 03:33:34 +0200</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://mulembe-app.github.io/updates/Mulembe-1.0.0.html</sparkle:releaseNotesLink>
+            <enclosure url="https://mulembe-app.github.io/updates/Mulembe-1.0.0.zip" length="5488242" type="application/octet-stream" sparkle:edSignature="KsYDnIm1GZOpQ2Ga68X5qkA9DgZa9f0Y11zxiRY+XJr1ao9JvOtfSlCpSiY1b0D2heGezI+kYrYuxAz9UF6OBA=="/>
+        </item>
+    </channel>
+</rss>
