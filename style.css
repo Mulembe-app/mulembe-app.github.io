@@ -45,6 +45,8 @@ header.top .wrap { display: flex; align-items: center; gap: 28px; height: 62px; 
 nav.links { display: flex; gap: 22px; margin-left: auto; font-size: 15px; }
 nav.links a { color: var(--muted); }
 nav.links a:hover { color: var(--text); text-decoration: none; }
+/* The Download button in the top bar keeps the button's dark text, also on hover. */
+nav.links a.button, nav.links a.button:hover, nav.links a.button:visited { color: #1b2023; }
 
 .button {
   display: inline-flex; align-items: center; gap: 8px;
@@ -155,3 +157,7 @@ a.card.link .more { display: inline-block; margin-top: auto; padding-top: 12px; 
 section { scroll-margin-top: 70px; }
 #phone { scroll-margin-top: 80px; }
 .policy-link { text-align: center; margin: 38px 0 0; font-weight: 600; }
+.card.mini { padding: 20px 22px 18px; }
+.card.mini .icon { font-size: 24px; margin-bottom: 10px; }
+.card.mini h3 { font-size: 17px; }
+.card.mini p { font-size: 15px; }
