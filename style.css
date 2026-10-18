@@ -224,3 +224,35 @@ a.card.link:hover .icon { box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.09), 0
   .compare td.part { font-size: 12.5px; line-height: 1.35; }
   .compare td:nth-child(2) { background: none; }
 }
+
+/* On a phone the top bar keeps only Download, and the other links move into this menu. */
+details.menu { display: none; position: relative; }
+details.menu summary {
+  list-style: none; cursor: pointer; display: grid; place-items: center;
+  width: 42px; height: 42px; border-radius: 12px; box-shadow: inset 0 0 0 1px var(--line);
+}
+details.menu summary::-webkit-details-marker { display: none; }
+details.menu summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+details.menu .bars, details.menu .bars::before, details.menu .bars::after {
+  display: block; width: 18px; height: 2px; border-radius: 2px; background: var(--text);
+  transition: transform .15s ease, background .15s ease;
+}
+details.menu .bars { position: relative; }
+details.menu .bars::before, details.menu .bars::after { content: ""; position: absolute; left: 0; }
+details.menu .bars::before { top: -6px; }
+details.menu .bars::after { top: 6px; }
+details.menu[open] .bars { background: transparent; }
+details.menu[open] .bars::before { transform: translateY(6px) rotate(45deg); }
+details.menu[open] .bars::after { transform: translateY(-6px) rotate(-45deg); }
+.menu-links {
+  position: absolute; right: 0; top: 52px; min-width: 200px; padding: 8px;
+  display: flex; flex-direction: column;
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+.menu-links a { padding: 12px 14px; border-radius: 10px; color: var(--text); font-size: 16px; }
+.menu-links a:hover, .menu-links a[aria-current="page"] { background: var(--card); text-decoration: none; }
+@media (max-width: 640px) {
+  details.menu { display: block; }
+  header.top .wrap { gap: 12px; }
+}

@@ -3,6 +3,15 @@
     <channel>
         <title>Mulembe</title>
         <item>
+            <title>1.0.5</title>
+            <pubDate>Sun, 18 Oct 2026 13:41:42 +0200</pubDate>
+            <sparkle:version>10005</sparkle:version>
+            <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://mulembe-app.github.io/updates/Mulembe-1.0.5.html</sparkle:releaseNotesLink>
+            <enclosure url="https://mulembe-app.github.io/updates/Mulembe-1.0.5.zip" length="7834488" type="application/octet-stream" sparkle:edSignature="ey5zegHyZLdfJkJCPlXVNIGe4WQw/4IAQcMAzrje6mynQhg0sdrg2ubuNKEt2AKhqissEwD/TF56KjRDBmbQDQ=="/>
+        </item>
+        <item>
             <title>1.0.4</title>
             <pubDate>Fri, 09 Oct 2026 11:31:18 +0200</pubDate>
             <sparkle:version>10004</sparkle:version>
@@ -19,15 +28,6 @@
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://mulembe-app.github.io/updates/Mulembe-1.0.3.html</sparkle:releaseNotesLink>
             <enclosure url="https://mulembe-app.github.io/updates/Mulembe-1.0.3.zip" length="7308100" type="application/octet-stream" sparkle:edSignature="c+ylhmA2y9lm7wB1zMs3qJQXheJVEBPuQe2YM7nh+8LR28LwNNOCZIF1osj504pvtS8FNTJ2zB9O8lxXUW7nBA=="/>
-        </item>
-        <item>
-            <title>1.0.2</title>
-            <pubDate>Mon, 05 Oct 2026 20:21:49 +0200</pubDate>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://mulembe-app.github.io/updates/Mulembe-1.0.2.html</sparkle:releaseNotesLink>
-            <enclosure url="https://mulembe-app.github.io/updates/Mulembe-1.0.2.zip" length="6760389" type="application/octet-stream" sparkle:edSignature="m1g+VHmDsB5sLWUttDb0uivnSdV7J2x66gX/Ww1s1ZEIpIuaTy/VfN0kFgaGTyy9ie7QNOQINVvmP+agYSUwBg=="/>
         </item>
     </channel>
 </rss>
