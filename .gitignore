@@ -1,0 +1,4 @@
+# macOS folder settings
+.DS_Store
+# Playwright CLI output from checking the pages
+.playwright-cli/
