@@ -28,48 +28,90 @@
   <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Mulembe", "url": "https://mulembe-app.github.io/"}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Mulembe", "operatingSystem": "macOS 13 or later", "applicationCategory": "DeveloperApplication", "description": "Mulembe is a calm, native Mac terminal for running AI coding agents like Claude Code and Codex side by side: see who's working and who needs you, keep going through usage limits, talk instead of typing, and review changes. 14-day free trial.", "url": "https://mulembe-app.github.io/", "downloadUrl": "https://mulembe-app.github.io/download/Mulembe.dmg", "image": "https://mulembe-app.github.io/assets/og-preview.jpg", "softwareVersion": "1.0.5", "offers": {"@type": "Offer", "price": "19", "priceCurrency": "USD", "url": "https://buy.polar.sh/polar_cl_kxaN28DmZ19ZkvyCFO8mW8TVtu3ghaV43Y10k1bp8Ak"}}</script>
-  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which agents does it work with?", "acceptedAnswer": {"@type": "Answer", "text": "Every Mulembe feature works with Claude Code, and Codex gets nearly all of them. Any other agent that runs in a terminal runs too, like Gemini CLI, GitHub Copilot CLI, Cursor Agent, Aider or OpenCode, with the essentials: panes, crash-proof sessions, voice typing, git and the changes panel. See Works with your agents."}}, {"@type": "Question", "name": "Which Macs does it run on?", "acceptedAnswer": {"@type": "Answer", "text": "Any Mac with macOS 13 Ventura or later."}}, {"@type": "Question", "name": "Do I need anything else?", "acceptedAnswer": {"@type": "Answer", "text": "Just Claude Code (or Codex). Everything Mulembe needs is built in, including tmux, which keeps your agents running while Mulembe restarts or updates."}}, {"@type": "Question", "name": "Does it collect any data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Mulembe has no analytics or tracking. It goes online only to check your license key, to look for updates, and to keep Claude Code current with Claude Code's own updater. On macOS 26 voice input is recognized on your Mac. On macOS 13 to 15, and for languages your Mac can't handle itself, Apple's speech recognition service does the work. See the privacy policy."}}, {"@type": "Question", "name": "What happens when the trial ends?", "acceptedAnswer": {"@type": "Answer", "text": "Mulembe asks for a license key before you can keep working in it. Your sessions keep running in the background, so everything is right where you left it once you activate."}}, {"@type": "Question", "name": "How do I move my license to a new Mac?", "acceptedAnswer": {"@type": "Answer", "text": "Open Mulembe → License… on the old Mac and click Deactivate This Mac. You can also manage your Macs in the Polar customer portal linked in your receipt."}}, {"@type": "Question", "name": "Can I get a refund?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Email us within 14 days of your purchase for a full refund. See the refund policy."}}, {"@type": "Question", "name": "Is Mulembe safe to open?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It's signed with an Apple Developer ID and notarized by Apple, which checks it for malware, so macOS opens it like any other app you download. The install steps take a minute."}}, {"@type": "Question", "name": "What does the name mean?", "acceptedAnswer": {"@type": "Answer", "text": "Mulembe is a greeting meaning peace in Luhya, spoken in western Kenya."}}]}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which agents does it work with?", "acceptedAnswer": {"@type": "Answer", "text": "Every Mulembe feature works with Claude Code, and Codex gets nearly all of them. Any other agent that runs in a terminal runs too, like Gemini CLI, GitHub Copilot CLI, Cursor Agent, Aider or OpenCode, with the essentials: panes, crash-proof sessions, voice typing, git and the changes panel. See Works with your agents."}}, {"@type": "Question", "name": "Which Macs does it run on?", "acceptedAnswer": {"@type": "Answer", "text": "Any Mac with macOS 13 Ventura or later."}}, {"@type": "Question", "name": "Do I need anything else?", "acceptedAnswer": {"@type": "Answer", "text": "Just Claude Code (or Codex). Everything Mulembe needs is built in, including tmux, which keeps your agents running while Mulembe restarts or updates."}}, {"@type": "Question", "name": "Does it collect any data?", "acceptedAnswer": {"@type": "Answer", "text": "No. Mulembe has no analytics or tracking. It goes online only to check your license key, to look for updates, and to keep Claude Code current with Claude Code's own updater. On macOS 26 voice input is recognized on your Mac. On macOS 13 to 15, and for languages your Mac can't handle itself, Apple's speech recognition service does the work. See the privacy policy."}}, {"@type": "Question", "name": "What happens when the trial ends?", "acceptedAnswer": {"@type": "Answer", "text": "Mulembe asks for a license key before you can keep working in it. Your sessions keep running in the background, so everything is right where you left it once you activate."}}, {"@type": "Question", "name": "How do I move my license to a new Mac?", "acceptedAnswer": {"@type": "Answer", "text": "Open Mulembe → License… on the old Mac and click Deactivate This Mac. You can also manage your Macs in the Polar customer portal linked in your receipt."}}, {"@type": "Question", "name": "Can I get a refund?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Email us within 14 days of your purchase for a full refund. See the refund policy."}}, {"@type": "Question", "name": "Is Mulembe safe to open?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It's signed with an Apple Developer ID and notarized by Apple, which checks it for malware, so macOS opens it like any other app you download. The install steps take a minute."}}]}</script>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/icon.png" alt="">Mulembe</a>
+    <a class="brand" href="#top"><img src="assets/icon.png" alt="">Mulembe</a>
     <nav class="links">
+      <a href="#why">Why</a>
       <a href="#features">Features</a>
       <a href="#pricing">Pricing</a>
-      <a href="#faq">FAQ</a>
-      <a href="install.html">Install</a>
+      <a href="#faq">Questions</a>
       <a class="button small" href="download/Mulembe.dmg">Download</a>
     </nav>
     <details class="menu">
       <summary aria-label="Menu"><span class="bars" aria-hidden="true"></span></summary>
       <nav class="menu-links">
+        <a onclick="this.closest('details').open = false" href="#why">Why</a>
         <a onclick="this.closest('details').open = false" href="#features">Features</a>
         <a onclick="this.closest('details').open = false" href="#pricing">Pricing</a>
-        <a onclick="this.closest('details').open = false" href="#faq">FAQ</a>
+        <a onclick="this.closest('details').open = false" href="#faq">Questions</a>
         <a onclick="this.closest('details').open = false" href="install.html">Install</a>
       </nav>
     </details>
   </div>
 </header>
 
-<main>
+<main id="top">
   <div class="wrap hero">
     <h1>All your AI agents, side by side.</h1>
     <p class="lead">Mulembe is a calm, native Mac terminal for Claude Code and Codex. See who's working, who needs you and what changed, all in one window.</p>
-    <p class="tagline">Your agents never stop. Not for crashes, not for limits.</p>
-    <div class="actions" id="download">
+    <div class="actions">
       <a class="button" href="download/Mulembe.dmg">Download free trial</a>
-      <a class="button ghost" href="https://buy.polar.sh/polar_cl_kxaN28DmZ19ZkvyCFO8mW8TVtu3ghaV43Y10k1bp8Ak">Buy for $19</a>
+      <a class="button ghost" href="#pricing">$19 once</a>
     </div>
     <div class="meta">Version 1.0.5 · 14 days free · macOS 13 Ventura or later · <a href="install.html">How to install</a></div>
     <div class="shot"><picture><source type="image/webp" srcset="assets/app-800.webp 800w, assets/app-1600.webp 1600w, assets/app-2400.webp 2400w" sizes="(max-width: 1168px) calc(100vw - 48px), 1120px"><img src="assets/app.jpg" width="1600" height="900" alt="Mulembe with four Claude Code sessions side by side: one working, one asking a question, one running a design-critic agent, one finished, with their ports and Docker containers in the headers." fetchpriority="high" decoding="async"></picture></div>
   </div>
 
-  <section id="features">
+  <!-- WHY: what it does for you -->
+  <section id="why">
+    <div class="wrap split simul">
+      <div>
+        <h2>Do more at once.</h2>
+        <p class="intro">One agent at a time leaves you waiting. Ten agents in ten terminal windows leave you checking which one stopped.</p>
+        <div class="points">
+          <div><h3>Run them all.</h3><p>Every agent gets its own pane in one window, so you can hand out as much work as you have.</p></div>
+          <div><h3>Stop checking.</h3><p>The pane that needs you turns orange and chimes. You look up only then.</p></div>
+          <div><h3>Lose nothing.</h3><p>Crashes, restarts and usage limits don't end a run. Agents keep going on their own.</p></div>
+          <div><h3>Stay calm.</h3><p>Mulembe means <i>peace</i> in Luhya, a language of western Kenya. With ten agents at work, that's the point.</p></div>
+        </div>
+      </div>
+      <figure class="photo">
+        <img src="assets/simul-1920.webp" width="1400" height="1068" alt="Eight-year-old Samuel Reshevsky in a sailor suit, standing at a row of tables, playing chess against a line of grown men at once." loading="lazy" decoding="async">
+        <figcaption>It works like a simul. In 1920 Samuel Reshevsky, aged eight, played a whole row of masters at once in France: walk the row, stop only where a move is waiting.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="apart">
     <div class="wrap">
       <h2>Many agents. One calm window.</h2>
-      <p class="intro">Mulembe means <i>peace</i> in Luhya, a language of western Kenya. That's the idea: calm, even with five agents working at once.</p>
+      <p class="intro">Plenty of apps show you many agents at once. Mulembe keeps them going.</p>
+      <div class="points four">
+        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4.5h-4.5"/><path d="M12 8v4l2.5 2"/></svg><h3>Crashes don't stop them.</h3><p>Quit, update or crash Mulembe and every agent keeps working. After a Mac restart, each conversation comes back.</p></div>
+        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10M7 21h10"/><path d="M8 3v2.5a4 4 0 0 0 1.6 3.2L12 12l2.4-3.3A4 4 0 0 0 16 5.5V3"/><path d="M8 21v-2.5a4 4 0 0 1 1.6-3.2L12 12l2.4 3.3a4 4 0 0 1 1.6 3.2V21"/></svg><h3>Limits don't end your day.</h3><p>When your usage resets, Mulembe continues where Claude stopped. Or move the conversation to another account and keep going.</p></div>
+        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15.6 14.4A4.5 4.5 0 0 1 21 19"/></svg><h3>Every account at once.</h3><p>Several Claude and ChatGPT accounts side by side, one per pane, each with its usage at a glance.</p></div>
+        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><h3>Busy while you're away.</h3><p>Your Mac stays awake while agents work and sleeps when they're done. Check in from your phone with Remote Control.</p></div>
+      </div>
+      <div class="how">
+        <h3>How it works</h3>
+        <ol>
+          <li><b>Open a pane for each job.</b> One project, one agent, side by side in one window.</li>
+          <li><b>Hand out the work.</b> Type or talk, then let them get on with it.</li>
+          <li><b>Answer the one that turns orange.</b> The rest keep working, and you stop checking.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW: the features -->
+  <section id="features">
+    <div class="wrap">
+      <h2>Everything it does.</h2>
+      <p class="intro">Each box leads to the details further down.</p>
       <div class="grid">
         <a class="card link" href="#focus"><div class="icon"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="ig1" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#cfe6a3"/><stop offset="1" stop-color="#7fc4b0"/></linearGradient></defs> <rect x="4" y="6" width="24" height="20" rx="3.5" fill="url(#ig1)" fill-opacity="0.16" stroke="url(#ig1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> <rect x="6.5" y="8.5" width="8.5" height="7" rx="1.6" fill="url(#ig1)" fill-opacity="0.85"/> <path d="M16 6v20M4 16h24" stroke="url(#ig1)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-opacity=".7"/></svg></div><h3>Every agent. One window.</h3><p>Panes and layouts for 1 to 16 sessions. Save a set of projects and reopen it exactly as it was.</p><span class="more">Read more →</span></a>
         <a class="card link" href="#notifications"><div class="icon"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="ig2" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#cfe6a3"/><stop offset="1" stop-color="#7fc4b0"/></linearGradient></defs> <path d="M9 14a7 7 0 0 1 14 0c0 6.5 2.8 8.2 2.8 8.2H6.2S9 20.5 9 14z" fill="url(#ig2)" fill-opacity="0.22" stroke="url(#ig2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> <path d="M13.5 25.5a2.6 2.6 0 0 0 5 0" stroke="url(#ig2)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="23.5" cy="8" r="3.2" fill="#e69875"/></svg></div><h3>Someone needs you. You'll know.</h3><p>Every pane shows working, done or waiting. A soft chime when an agent asks, and a pill that counts the rest.</p><span class="more">Read more →</span></a>
@@ -80,53 +122,6 @@
         <a class="card link" href="#sessions"><div class="icon"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="ig7" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#cfe6a3"/><stop offset="1" stop-color="#7fc4b0"/></linearGradient></defs> <path d="M10 11.5a4.5 4.5 0 1 0 0 9c3.6 0 8.4-9 12-9a4.5 4.5 0 1 1 0 9c-3.6 0-8.4-9-12-9z" stroke="url(#ig7)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/> <circle cx="10" cy="16" r="1.6" fill="url(#ig7)" fill-opacity="0.85"/> <circle cx="22" cy="16" r="1.6" fill="url(#ig7)" fill-opacity="0.85"/></svg></div><h3>Quit anytime. Nothing stops.</h3><p>Agents keep running while Mulembe restarts, updates or even crashes. After a Mac restart, every conversation comes back.</p><span class="more">Read more →</span></a>
         <a class="card link" href="#phone"><div class="icon"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="ig8" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#cfe6a3"/><stop offset="1" stop-color="#7fc4b0"/></linearGradient></defs> <rect x="9.5" y="3.5" width="13" height="25" rx="3.4" fill="url(#ig8)" fill-opacity="0.16" stroke="url(#ig8)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> <path d="M14.5 24.8h3" stroke="url(#ig8)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> <rect x="12.5" y="9" width="7" height="4.6" rx="1.6" fill="url(#ig8)" fill-opacity="0.85"/> <rect x="12.5" y="15.4" width="5" height="3.6" rx="1.4" fill="url(#ig8)" fill-opacity="0.4"/></svg></div><h3>Your phone, in the loop.</h3><p>Turn Remote Control on or off per pane, and reply from the Claude app.</p><span class="more">Read more →</span></a>
         <a class="card link" href="#privacy"><div class="icon"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="ig9" x1="4" y1="3" x2="28" y2="29" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#cfe6a3"/><stop offset="1" stop-color="#7fc4b0"/></linearGradient></defs> <path d="M16 3.8l9 3.6v6.4c0 6-3.9 10.6-9 13.2-5.1-2.6-9-7.2-9-13.2V7.4z" fill="url(#ig9)" fill-opacity="0.22" stroke="url(#ig9)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/> <path d="M12 15.8l2.8 2.8 5.4-5.6" stroke="url(#ig9)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9"/></svg></div><h3>Private by default.</h3><p>No analytics, no tracking. Your code and conversations stay on your Mac. Only license and update checks go online.</p><span class="more">Read more →</span></a>
-      </div>
-    </div>
-  </section>
-
-  <section id="why">
-    <div class="wrap">
-      <h2>Why Mulembe.</h2>
-      <p class="intro">Plenty of apps show you many agents at once. Mulembe keeps them going.</p>
-      <div class="points four">
-        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.4-5.7"/><path d="M20 4v4.5h-4.5"/><path d="M12 8v4l2.5 2"/></svg><h3>Crashes don't stop them.</h3><p>Quit, update or crash Mulembe and every agent keeps working. After a Mac restart, each conversation comes back.</p></div>
-        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10M7 21h10"/><path d="M8 3v2.5a4 4 0 0 0 1.6 3.2L12 12l2.4-3.3A4 4 0 0 0 16 5.5V3"/><path d="M8 21v-2.5a4 4 0 0 1 1.6-3.2L12 12l2.4 3.3a4 4 0 0 1 1.6 3.2V21"/></svg><h3>Limits don't end your day.</h3><p>When your usage resets, Mulembe continues where Claude stopped. Or move the conversation to another account and keep going.</p></div>
-        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9" r="2.5"/><path d="M15.6 14.4A4.5 4.5 0 0 1 21 19"/></svg><h3>Every account at once.</h3><p>Several Claude and ChatGPT accounts side by side, one per pane, each with its usage at a glance.</p></div>
-        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><h3>Busy while you're away.</h3><p>Your Mac stays awake while agents work and sleeps when they're done. Check in from your phone with Remote Control.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="agents">
-    <div class="wrap">
-      <h2>Works with your agents.</h2>
-      <p class="intro">Every pane is a full terminal, so any agent that runs in a terminal runs in Mulembe. How far it goes depends on the agent.</p>
-      <div class="points three agents">
-        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg><h3>Claude Code. Everything.</h3>
-          <p>Every Mulembe feature: working and needs-you status, subagents with their model and effort, usage limits that continue by themselves, several accounts, Remote Control, and conversations that come back after a restart.</p></div>
-        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.8 4.5v9L12 21l-7.8-4.5v-9z"/><path d="M12 8.5l3 1.75v3.5L12 15.5l-3-1.75v-3.5z"/></svg><h3>Codex. Nearly everything.</h3>
-          <p>Accounts per pane, conversations that come back after a restart, crash-proof sessions, voice typing, git and the changes panel. Its status comes from its output and alerts.</p></div>
-        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M7 10l3 2.5-3 2.5"/><path d="M12.5 15.5h4.5"/></svg><h3>Any terminal agent. The essentials.</h3>
-          <p>Gemini CLI, GitHub Copilot CLI, Cursor Agent, Aider, OpenCode, Amp, Droid, Kimi Code, Grok and more get panes and layouts, crash-proof sessions, voice typing, git, the changes panel, ports and Docker. Deeper support for them is on the way.</p></div>
-      </div>
-
-      <div class="compare">
-        <table>
-          <thead><tr><th scope="col"><span class="sr">Feature</span></th><th scope="col">Claude Code</th><th scope="col">Codex</th><th scope="col">Other <span class="long">terminal </span>agents</th></tr></thead>
-          <tbody>
-          <tr><th scope="row">Panes, layouts and zoom</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
-          <tr><th scope="row">Sessions that survive restarts and crashes</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
-          <tr><th scope="row">Git badges, changes panel, ports and Docker</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
-          <tr><th scope="row">Voice typing</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
-          <tr><th scope="row">Working status</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="part">From its output</td><td class="part">From its output</td></tr>
-          <tr><th scope="row">Needs you alert</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="part">When it sends an alert</td><td class="part">When it sends an alert</td></tr>
-          <tr><th scope="row">Several accounts, one per pane</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td></tr>
-          <tr><th scope="row">Conversation comes back after a Mac restart</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="part">Reopens in its folder</td></tr>
-          <tr><th scope="row">Usage limits that continue by themselves</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td><td class="no"><span aria-label="No"></span></td></tr>
-          <tr><th scope="row">Subagents with their model and effort</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td><td class="no"><span aria-label="No"></span></td></tr>
-          <tr><th scope="row">Remote Control from your phone</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td><td class="no"><span aria-label="No"></span></td></tr>
-          </tbody>
-        </table>
       </div>
     </div>
   </section>
@@ -298,40 +293,108 @@
     </div>
   </section>
 
+  <section id="agents">
+    <div class="wrap">
+      <h2>Works with your agents.</h2>
+      <p class="intro">Every pane is a full terminal, so any agent that runs in a terminal runs in Mulembe. How far it goes depends on the agent.</p>
+      <div class="points three agents">
+        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg><h3>Claude Code. Everything.</h3>
+          <p>Every Mulembe feature: working and needs-you status, subagents with their model and effort, usage limits that continue by themselves, several accounts, Remote Control, and conversations that come back after a restart.</p></div>
+        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.8 4.5v9L12 21l-7.8-4.5v-9z"/><path d="M12 8.5l3 1.75v3.5L12 15.5l-3-1.75v-3.5z"/></svg><h3>Codex. Nearly everything.</h3>
+          <p>Accounts per pane, conversations that come back after a restart, crash-proof sessions, voice typing, git and the changes panel. Its status comes from its output and alerts.</p></div>
+        <div><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="M7 10l3 2.5-3 2.5"/><path d="M12.5 15.5h4.5"/></svg><h3>Any terminal agent. The essentials.</h3>
+          <p>Gemini CLI, GitHub Copilot CLI, Cursor Agent, Aider, OpenCode, Amp, Droid, Kimi Code, Grok and more get panes and layouts, crash-proof sessions, voice typing, git, the changes panel, ports and Docker. Deeper support for them is on the way.</p></div>
+      </div>
+
+      <div class="compare">
+        <table>
+          <thead><tr><th scope="col"><span class="sr">Feature</span></th><th scope="col">Claude Code</th><th scope="col">Codex</th><th scope="col">Other <span class="long">terminal </span>agents</th></tr></thead>
+          <tbody>
+          <tr><th scope="row">Panes, layouts and zoom</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
+          <tr><th scope="row">Sessions that survive restarts and crashes</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
+          <tr><th scope="row">Git badges, changes panel, ports and Docker</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
+          <tr><th scope="row">Voice typing</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td></tr>
+          <tr><th scope="row">Working status</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="part">From its output</td><td class="part">From its output</td></tr>
+          <tr><th scope="row">Needs you alert</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="part">When it sends an alert</td><td class="part">When it sends an alert</td></tr>
+          <tr><th scope="row">Several accounts, one per pane</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td></tr>
+          <tr><th scope="row">Conversation comes back after a Mac restart</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="part">Reopens in its folder</td></tr>
+          <tr><th scope="row">Usage limits that continue by themselves</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td><td class="no"><span aria-label="No"></span></td></tr>
+          <tr><th scope="row">Subagents with their model and effort</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td><td class="no"><span aria-label="No"></span></td></tr>
+          <tr><th scope="row">Remote Control from your phone</th><td class="yes"><svg viewBox="0 0 24 24" aria-label="Yes"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></td><td class="no"><span aria-label="No"></span></td><td class="no"><span aria-label="No"></span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT: who made it, the price, the questions -->
+  <section id="letter" aria-labelledby="letter-title">
+    <div class="letter">
+      <img src="assets/icon.png" width="44" height="44" alt="">
+      <h2 id="letter-title">Why I made Mulembe</h2>
+      <p>Coding agents can now work on their own for an hour, so it’s tempting to run five or ten at once. But the terminal was made for one person typing one command. With ten agents in ten windows, you spend the day clicking through them to find the one that’s waiting.</p>
+      <p>I think that’s backwards. The agents should wait for you, not you for them. You should hear from the one that needs you and stop checking the ones that don’t.</p>
+      <p>So I made the terminal I wanted. Every agent in one window, the one that needs you in orange, and nothing that stops them, not a crash, not a restart, not a usage limit. I called it Mulembe, the greeting of the Luhya people of western Kenya. It means peace.</p>
+      <p>It doesn’t replace Claude Code or Codex, it runs them. There’s no account and nothing is tracked. What it gives you is <mark>ten agents at work, and you still calm</mark>.</p>
+      <p class="sign"><a href="https://www.linkedin.com/in/arturperec/" target="_blank" rel="noopener">Artur Pereć</a><small><a href="mailto:mulembeapp@icloud.com">mulembeapp@icloud.com</a></small></p>
+    </div>
+  </section>
+
   <section id="pricing">
     <div class="wrap">
-      <h2>Simple pricing</h2>
+      <h2>One price.</h2>
       <p class="intro">Try everything free for 14 days. If Mulembe earns its place, buy it once.</p>
-      <div class="price-card">
-        <div class="price">$19 <small>once</small></div>
-        <div style="color: var(--muted)">€19 · 79 zł</div>
-        <ul>
-          <li>Every feature, no subscription</li>
-          <li>Use it on up to 3 of your Macs</li>
-          <li>Free updates, installed with one click</li>
-          <li>14-day free trial first</li>
-          <li>14-day money-back guarantee</li>
-        </ul>
-        <a class="button" href="https://buy.polar.sh/polar_cl_kxaN28DmZ19ZkvyCFO8mW8TVtu3ghaV43Y10k1bp8Ak">Buy Mulembe</a>
-        <div class="note">Payments are handled by Polar, our merchant of record. Prices include taxes where required.</div>
+      <div class="plans">
+        <div class="plan">
+          <h3>Free trial</h3>
+          <p class="amount">$0</p>
+          <p class="for">Every feature for 14 days. No account, no card.</p>
+          <p class="inc">When it ends, Mulembe asks for a license key. Your sessions keep running, so everything is where you left it.</p>
+          <a class="button ghost" href="download/Mulembe.dmg">Download free trial</a>
+        </div>
+        <div class="plan">
+          <h3>License</h3>
+          <p class="amount">$19 <small>once</small></p>
+          <p class="for">Yours to keep, on up to 3 of your Macs. No subscription.</p>
+          <p class="inc">Free updates, installed with one click. A full refund within 14 days. Also €19 or 79 zł, with taxes included where required.</p>
+          <a class="button" href="https://buy.polar.sh/polar_cl_kxaN28DmZ19ZkvyCFO8mW8TVtu3ghaV43Y10k1bp8Ak">Buy for $19</a>
+        </div>
       </div>
+      <p class="note">Payments are handled by Polar, our merchant of record.</p>
     </div>
   </section>
 
   <section id="faq">
     <div class="wrap">
-      <h2>Questions</h2>
-      <div class="faq">
-        <details><summary>Which agents does it work with?</summary><p>Every Mulembe feature works with Claude Code, and Codex gets nearly all of them. Any other agent that runs in a terminal runs too, like Gemini CLI, GitHub Copilot CLI, Cursor Agent, Aider or OpenCode, with the essentials: panes, crash-proof sessions, voice typing, git and the changes panel. See <a href="#agents">Works with your agents</a>.</p></details>
-        <details><summary>Which Macs does it run on?</summary><p>Any Mac with macOS 13 Ventura or later.</p></details>
-        <details><summary>Do I need anything else?</summary><p>Just Claude Code (or Codex). Everything Mulembe needs is built in, including tmux, which keeps your agents running while Mulembe restarts or updates.</p></details>
-        <details><summary>Does it collect any data?</summary><p>No. Mulembe has no analytics or tracking. It goes online only to check your license key, to look for updates, and to keep Claude Code current with Claude Code's own updater. On macOS 26 voice input is recognized on your Mac. On macOS 13 to 15, and for languages your Mac can't handle itself, Apple's speech recognition service does the work. See the <a href="privacy.html">privacy policy</a>.</p></details>
-        <details><summary>What happens when the trial ends?</summary><p>Mulembe asks for a license key before you can keep working in it. Your sessions keep running in the background, so everything is right where you left it once you activate.</p></details>
-        <details><summary>How do I move my license to a new Mac?</summary><p>Open Mulembe → License… on the old Mac and click Deactivate This Mac. You can also manage your Macs in the Polar customer portal linked in your receipt.</p></details>
-        <details><summary>Can I get a refund?</summary><p>Yes. Email us within 14 days of your purchase for a full refund. See the <a href="refunds.html">refund policy</a>.</p></details>
-        <details><summary>Is Mulembe safe to open?</summary><p>Yes. It's signed with an Apple Developer ID and notarized by Apple, which checks it for malware, so macOS opens it like any other app you download. The <a href="install.html">install steps</a> take a minute.</p></details>
-        <details><summary>What does the name mean?</summary><p>Mulembe is a greeting meaning <i>peace</i> in Luhya, spoken in western Kenya.</p></details>
+      <div class="faq-head">
+        <h2>Questions</h2>
+        <p>Something else? Write to <a href="mailto:mulembeapp@icloud.com">mulembeapp@icloud.com</a>.</p>
       </div>
+      <div class="qa-list">
+        <div class="qa-col">
+          <details class="qa"><summary>Which agents does it work with?<i aria-hidden="true"></i></summary><p>Every Mulembe feature works with Claude Code, and Codex gets nearly all of them. Any other agent that runs in a terminal runs too, like Gemini CLI, GitHub Copilot CLI, Cursor Agent, Aider or OpenCode, with the essentials: panes, crash-proof sessions, voice typing, git and the changes panel. See <a href="#agents">Works with your agents</a>.</p></details>
+          <details class="qa"><summary>Which Macs does it run on?<i aria-hidden="true"></i></summary><p>Any Mac with macOS 13 Ventura or later.</p></details>
+          <details class="qa"><summary>Do I need anything else?<i aria-hidden="true"></i></summary><p>Just Claude Code (or Codex). Everything Mulembe needs is built in, including tmux, which keeps your agents running while Mulembe restarts or updates.</p></details>
+          <details class="qa"><summary>Does it collect any data?<i aria-hidden="true"></i></summary><p>No. Mulembe has no analytics or tracking. It goes online only to check your license key, to look for updates, and to keep Claude Code current with Claude Code's own updater. On macOS 26 voice input is recognized on your Mac. On macOS 13 to 15, and for languages your Mac can't handle itself, Apple's speech recognition service does the work. See the <a href="privacy.html">privacy policy</a>.</p></details>
+        </div>
+        <div class="qa-col">
+          <details class="qa"><summary>What happens when the trial ends?<i aria-hidden="true"></i></summary><p>Mulembe asks for a license key before you can keep working in it. Your sessions keep running in the background, so everything is right where you left it once you activate.</p></details>
+          <details class="qa"><summary>How do I move my license to a new Mac?<i aria-hidden="true"></i></summary><p>Open Mulembe → License… on the old Mac and click Deactivate This Mac. You can also manage your Macs in the Polar customer portal linked in your receipt.</p></details>
+          <details class="qa"><summary>Can I get a refund?<i aria-hidden="true"></i></summary><p>Yes. Email us within 14 days of your purchase for a full refund. See the <a href="refunds.html">refund policy</a>.</p></details>
+          <details class="qa"><summary>Is Mulembe safe to open?<i aria-hidden="true"></i></summary><p>Yes. It's signed with an Apple Developer ID and notarized by Apple, which checks it for malware, so macOS opens it like any other app you download. The <a href="install.html">install steps</a> take a minute.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="start" class="close">
+    <div class="wrap">
+      <h2>Give your agents one calm window.</h2>
+      <div class="actions">
+        <a class="button" href="download/Mulembe.dmg">Download free trial</a>
+        <a class="button ghost" href="install.html">How to install</a>
+      </div>
+      <div class="meta">macOS 13 Ventura or later · Signed and notarized by Apple</div>
     </div>
   </section>
 </main>
@@ -352,7 +415,6 @@
       if (from) from.scrollIntoView({ behavior: "smooth", block: "center" });
       pill.hidden = true;
     });
-    // Back among the features by scrolling: no need for the button.
     window.addEventListener("scroll", function () {
       if (pill.hidden || Date.now() - shownAt < 1500) return;
       var box = document.getElementById("features").getBoundingClientRect();
@@ -370,6 +432,7 @@
     <a href="terms.html">Terms</a>
     <a href="refunds.html">Refunds</a>
     <a href="mailto:mulembeapp@icloud.com">mulembeapp@icloud.com</a>
+    <p class="credits">Photograph: “Chess Master, 1920”, New York Times, <a href="https://commons.wikimedia.org/wiki/File:Samuel_Reshevsky_versus_the_World.JPG">public domain</a>, via Wikimedia Commons.</p>
   </div>
 </footer>
 </body>
