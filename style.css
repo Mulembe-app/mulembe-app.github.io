@@ -290,6 +290,10 @@ details.menu[open] .bars::after { transform: translateY(-6px) rotate(-45deg); }
 .plan .amount.words { letter-spacing: -1px; }
 .plans.three .plan .amount.words { font-size: 44px; line-height: 64px; }
 .plans.three .plan .button { white-space: nowrap; }
+.plan .tiers { list-style: none; padding: 0; margin: 14px 0 18px; width: 100%; }
+.plan .tiers li { display: flex; justify-content: space-between; align-items: baseline; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 16px; color: var(--muted); }
+.plan .tiers li:first-child { padding-top: 0; }
+.plan .tiers b { font-size: 30px; font-weight: 700; letter-spacing: -.5px; color: var(--text, inherit); font-variant-numeric: tabular-nums; }
 @media (max-width: 980px) { .plans.three { grid-template-columns: 1fr; max-width: 520px; } }
 @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } }
 
