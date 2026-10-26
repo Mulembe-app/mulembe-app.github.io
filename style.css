@@ -285,6 +285,12 @@ details.menu[open] .bars::after { transform: translateY(-6px) rotate(-45deg); }
 .plan .inc { margin: 0 0 26px; color: var(--muted); font-size: 15.5px; }
 .plan .button { margin-top: auto; }
 #pricing .note { text-align: center; color: var(--muted); font-size: 14px; margin: 18px 0 0; }
+.plans.three { grid-template-columns: repeat(3, 1fr); max-width: 1080px; }
+.plans.three .plan .amount small { display: block; margin-top: 10px; line-height: 1.3; }
+.plan .amount.words { letter-spacing: -1px; }
+.plans.three .plan .amount.words { font-size: 44px; line-height: 64px; }
+.plans.three .plan .button { white-space: nowrap; }
+@media (max-width: 980px) { .plans.three { grid-template-columns: 1fr; max-width: 520px; } }
 @media (max-width: 760px) { .plans { grid-template-columns: 1fr; } }
 
 /* Questions: two columns of cards that open */
@@ -318,3 +324,8 @@ details.menu[open] .bars::after { transform: translateY(-6px) rotate(-45deg); }
 .photo img { border-radius: 14px; filter: grayscale(1); box-shadow: 0 0 0 1px var(--line); }
 .photo figcaption { margin-top: 12px; font-size: 14px; color: var(--muted); }
 footer.bottom .credits { flex-basis: 100%; margin: 6px 0 0; font-size: 13px; }
+
+/* The page after buying (thanks.html) */
+.thanks .eyebrow { margin: 0 0 10px; font-size: 13px; letter-spacing: .32em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+.thanks h1 { margin-top: 0; }
+.thanks .lead { font-size: 20px; color: var(--muted); margin: 0 0 34px; }
